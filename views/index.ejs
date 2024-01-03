@@ -1,0 +1,26 @@
+<%- include('layout', { body: content }) %>
+<h2>Lista de Produtos</h2>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Código</th>
+        <th>Descrição</th>
+        <th>Preço</th>
+        <th>Ações</th>
+    </tr>
+    <% produtos.forEach(produto => { %>
+        <tr>
+            <td><%= produto.id %></td>
+            <td><%= produto.nome %></td>
+            <td><%= produto.codigo %></td>
+            <td><%= produto.descricao %></td>
+            <td>R$ <%= produto.preco.toFixed(2) %></td>
+            <td>
+                <a href="/edit/<%= produto.id %>">Editar</a>
+                <a href="/delete/<%= produto.id %>">Deletar</a>
+            </td>
+        </tr>
+    <% }); %>
+</table>
+<a href="/add">Adicionar Produto</a>

@@ -1,0 +1,14 @@
+<%- include('layout', { body: content }) %>
+<h2>Editar Produto</h2>
+<form action="/edit/<%= produto.id %>" method="post">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" value="<%= produto.nome %>" required>
+    <label for="codigo">Código:</label>
+    <input type="text" id="codigo" name="codigo" value="<%= produto.codigo %>" required>
+    <label for="descricao">Descrição:</label>
+    <input type="text" id="descricao" name="descricao" value="<%= produto.descricao %>" required>
+    <label for="preco">Preço:</label>
+    <input type="number" id="preco" name="preco" value="<%= produto.preco %>" step="0.01" required>
+    <button type="submit">Salvar Alterações</button>
+</form>
+<a href="/">Voltar para a Lista de Produtos</a>
