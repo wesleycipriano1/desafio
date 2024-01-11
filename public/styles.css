@@ -3,6 +3,16 @@ body {
     text-align: center;
 }
 
+body {
+    background: linear-gradient(to bottom, #a6c8e0, #2a5d9c);
+    
+    color: white; 
+    font-size: 16px;
+}
+body {
+    min-height: 100vh; 
+
+}
 table {
     width: 100%;
     border-collapse: collapse;
@@ -14,10 +24,139 @@ th, td {
     padding: 8px;
 }
 
-th {
-    background-color: #f2f2f2;
-}
 
 a {
     margin-right: 10px;
 }
+.btn-add {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.btn-add:hover {
+    background-color: #218838;
+}
+.btn-back {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #5435dc; 
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.btn-back:hover {
+    background-color: #5435dc; 
+}
+
+.label-nome{
+    color: blue;
+    font-size: 16px;
+
+}
+.cabecalho-tabela{
+    background-color: #000000;
+    color: white;
+}
+.btn-edit{
+    background-color: #2a5d9c;
+    color: #fff;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    display: inline-block;
+}
+.btn-delete{
+    background-color: brown;
+    color: #fff;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    display: inline-block;
+}
+.vertical-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 300px; 
+    margin: 0 auto; 
+}
+::content{
+    color: brown;
+}
+
+.vertical-form label {
+    margin-bottom: 8px;
+}
+
+.vertical-form input,
+.vertical-form textarea {
+    margin-bottom: 16px;
+}
+.vertical-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.vertical-form label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    width: 100%;
+}
+
+.vertical-form input,
+.vertical-form textarea {
+    margin-bottom: 16px;
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.vertical-form button {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.vertical-form button:hover {
+    background-color: #218838;
+}
+.vertical-form button {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 auto; 
+    display: block; 
+}
+
+
+
+.btn-back {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #5435dc; 
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.btn-back:hover {
+    background-color: #5435dc; 
+}
+
